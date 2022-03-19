@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+@font-face {
+    font-family: duna;
+    src: url('../fontes/Dune_Rise.otf');
+}
+
+:root {
+    --marromEscuro: (#734E39);
+    --areia: (#D98F4E);
+    --laranjaEscuro: (#BF6430);
+    --cinza: (#BFA59B);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: white;
+    font-family: Poppins;
+}
+
+.inicio {
+    height: 657px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url(../img/dunas.jpg) no-repeat;
+    background-size: cover;
+    background-position: (300, 300);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    position: absolute;
+}
+
+.navegacao {
+    list-style: none;
+    display: flex;
+}
+
+.navegacao li a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.dune {
+    color: white;
+    font-family: duna;
+    font-size: 30px;
+}
+
+.box-icone {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.box-icone .icone {
+    font-size: 40px;
+    color: #292828de;
+    animation: seta 2s ease-out infinite;
+}
+
+::-webkit-scrollbar {
+    background: white;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #BF7B54;
+    border-radius: 20px;
+}
+
+.espacamento {
+    height: 150px;
+    width: 100%;
+}
+
+.sinopse {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-sinopse {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-sinopse h1 {
+    width: 500px;
+    font-family: duna;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-sinopse p {
+    width: 70%;
+    margin-top: 50px;
+}
+
+@keyframes seta {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
