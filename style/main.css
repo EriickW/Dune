@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
 @font-face {
-    font-family: duna;
-    src: url('../fontes/Dune_Rise.otf');
+    font-family: Fauna;
+    src: url('../fontes/Fauna.otf');
 }
+@font-face {
+    font-family: duna;
+    src: url('../fontes/Dune_Rise.otf');}
 
 :root {
-    --marromEscuro: (#734E39);
-    --areia: (#D98F4E);
-    --laranjaEscuro: (#BF6430);
-    --cinza: (#BFA59B);
+    --marromEscuro:rgb(139, 130, 83);
+    --areia:#D98F4E;
+    --laranjaEscuro:#e69769;
+    --cinza:#d8c981;
+    --corEscura:#3D402C;
+    --fundo: rgba(39,39,39,255);
+    --fundoBox: rgb(44, 44, 44);
 }
 
 * {
@@ -19,8 +25,9 @@
 
 body {
     width: 100%;
-    background: white;
+    background: var(--fundo);
     font-family: Poppins;
+    color:white
 }
 
 .inicio {
@@ -54,6 +61,12 @@ header {
     color: white;
     letter-spacing: 1px;
     font-weight: 500;
+    border-bottom:3px solid transparent;
+    transition: all 0.5s ease-out;
+}
+.navegacao li:hover a{
+    border-bottom:3px solid var(--cinza) ;
+    
 }
 
 .dune {
@@ -77,20 +90,95 @@ header {
 }
 
 ::-webkit-scrollbar {
-    background: white;
+    background:var(--fundoBox);
     width: 10px;
+
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #BF7B54;
-    border-radius: 20px;
+    border-radius: 10px;
+    background-color:var(--laranjaEscuro);
 }
 
 .espacamento {
-    height: 150px;
+    height: 70px;
     width: 100%;
 }
+.espacamentoMenor {
+    height: 50px;
+    width: 100%;
+}
+.categorias{
+    font-family: duna;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .box{
+    height: 400px;
+    width: 325px;
+    background: var(--fundoBox);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #0000007c, 0px 32px 50px -30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease-in-out;
+}
+.container .box:hover{
+    box-shadow: 0px 10px 13px -7px #000000bd, 0px 32px 50px -30px rgba(0, 0, 0, 0.37);
+    height: 420px;
+    width: 345px;
+}
+ion-icon{
+    font-size: 50px;
+    margin-bottom: 40px;
+    color:var(--marromEscuro)
+}
+.container .box h1{
+    font-family: Fauna;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+.container .box p{
+    font-size: 15px;
+}
 
+.container .box button{
+    transform: translateY(70px);
+    padding: 8px 20px 8px 20px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    border:none;
+    color: white;
+    background: var(--marromEscuro);
+    border: 2px solid var(--marromEscuro);
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0px 0px 38px 2px rgba(54,54,54,0.56);
+}
+.container .box button:hover{
+    background: transparent;
+    color: var(--marromEscuro);
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .container{
+        flex-direction: column;
+        
+
+    }
+}
 .sinopse {
     width: 100%;
     display: flex;
@@ -118,7 +206,7 @@ header {
 }
 
 .box-sinopse p {
-    width: 70%;
+    width: 80%;
     margin-top: 50px;
 }
 
@@ -133,3 +221,46 @@ header {
         transform: translateY(0);
     }
 }
+
+.citacao{
+    background: var(--marromEscuro);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    color:white;
+    font-size: 30px;
+}
+.origem{
+    height: 500px;
+    width: 100%;
+    display: flex;
+   
+}
+.textoOrigem{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left:10px;
+}
+.textoOrigem h1{
+    font-family: duna;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.autor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.autor img{
+    width: 100%;
+    margin: 0;
+}
+
