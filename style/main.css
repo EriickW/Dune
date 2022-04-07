@@ -8,7 +8,7 @@
     src: url('../fontes/Dune_Rise.otf');}
 
 :root {
-    --marromEscuro:rgb(139, 130, 83);
+    --marromEscuro:rgb(207, 194, 126);
     --areia:#D98F4E;
     --laranjaEscuro:#e69769;
     --cinza:#d8c981;
@@ -24,6 +24,7 @@
 }
 
 body {
+    height: 100%;
     width: 100%;
     background: var(--fundo);
     font-family: Poppins;
@@ -35,57 +36,44 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background: url(../img/dunas.jpg) no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.288),
+    rgba(0, 0, 0, 0.384)),url("../img/dunas.jpg") ;
     background-size: cover;
-    background-position: (300, 300);
+    z-index: 1;
 }
-
-header {
+.container-inicio{
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 100px;
-    position: absolute;
+    justify-content: center;
+    flex-direction: column;
 }
-
-.navegacao {
-    list-style: none;
-    display: flex;
+.container-inicio h1{
+     font-size:100px;
+     z-index: 2;
 }
-
-.navegacao li a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    letter-spacing: 1px;
-    font-weight: 500;
-    border-bottom:3px solid transparent;
-    transition: all 0.5s ease-out;
-}
-.navegacao li:hover a{
-    border-bottom:3px solid var(--cinza) ;
+.container-inicio button{
     
+background: none;
+height: 50px;
+border: none;
+cursor: pointer;
 }
-
 .dune {
     color: white;
-    font-family: duna;
+    font-family: Fauna;
     font-size: 30px;
 }
 
 .box-icone {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+
     text-align: center;
     margin: 0;
 }
 
 .box-icone .icone {
-    font-size: 40px;
-    color: #292828de;
+    font-size: 60px;
+    color:white;
     animation: seta 2s ease-out infinite;
 }
 
@@ -108,11 +96,13 @@ header {
     height: 50px;
     width: 100%;
 }
-.categorias{
+#categorias{
+    position: relative;
     font-family: duna;
     text-align: center;
 }
 .container{
+    position: relative;
     width: 100%;
     height: 550px;
     display: flex;
@@ -120,6 +110,7 @@ header {
     justify-content: space-around;
 }
 .container .box{
+    position: relative;
     height: 400px;
     width: 325px;
     background: var(--fundoBox);
@@ -153,33 +144,27 @@ ion-icon{
 }
 
 .container .box button{
-    transform: translateY(70px);
+    margin-top: 30px;
     padding: 8px 20px 8px 20px;
     font-weight: 600;
     font-family: 'Poppins';
     border:none;
-    color: white;
-    background: var(--marromEscuro);
+    background: transparent;
+    color: var(--marromEscuro);
     border: 2px solid var(--marromEscuro);
     transition: all 0.4s ease-in-out;
     border-radius: 5px;
+    cursor: pointer;
     box-shadow: 0px 0px 38px 2px rgba(54,54,54,0.56);
 }
 .container .box button:hover{
-    background: transparent;
-    color: var(--marromEscuro);
-
+    background: var(--marromEscuro);
+    border: 2px solid var(--marromEscuro);
+   color: rgba(39,39,39,255);
 }
 
-
-@media screen and (max-width: 550px) {
-    .container{
-        flex-direction: column;
-        
-
-    }
-}
 .sinopse {
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
@@ -188,15 +173,18 @@ ion-icon{
 }
 
 .box-sinopse {
+    height: 260px;
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .box-sinopse h1 {
-    width: 500px;
+    width:50%;
     font-family: duna;
     font-size: 40px;
     display: flex;
@@ -208,6 +196,8 @@ ion-icon{
 .box-sinopse p {
     width: 80%;
     margin-top: 50px;
+    font-size: 18px;
+    text-align: center;
 }
 
 @keyframes seta {
@@ -231,7 +221,7 @@ ion-icon{
     align-items: center;
 }
 .texto{
-    color:white;
+    color: rgba(39,39,39,255);
     font-size: 30px;
 }
 .origem{
@@ -263,4 +253,23 @@ ion-icon{
     width: 100%;
     margin: 0;
 }
-
+#sobreDuna{
+    width: 100%;
+    height: 500px;
+}
+.sobreDuna{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    
+}
+.sobreDuna h1{
+    font-family: duna;
+    margin-bottom: 30px;
+}
+.sobreDuna p{
+    font-size: 15px;
+}

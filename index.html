@@ -6,30 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
     <title>Duna</title>
 </head>
 
 <body>
-    <header>
-        <h1 class="dune">Dune</h1>
-        <ul class='navegacao'>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>Personagens</a></li>
-            <li><a href='#'>Contatos</a></li>
-        </ul>
-
-
-    </header>
+    
     <main class="inicio">
         <div class="container-inicio">
-            <div class="box-icone">
-                <ion-icon class="icone" name="arrow-down-outline"></ion-icon>
-
-            </div>
+            <h1 class="dune">DUNE</h1>
+            <a href="#categorias">
+                <button class="box-icone">
+                    <ion-icon class="icone" name="arrow-down-outline"></ion-icon>
+                
+                </button>
+            </a>
         </div>
     </main>
     <div class="espacamento"></div>
-    <h1 class="categorias">Categorias</h1>
+    <h1 id="categorias">Categorias</h1>
     <div class="container">
         
         <div class="box">
@@ -51,7 +46,6 @@
             <button>Clique aqui</button>
         </div>
     </div>
-    <div class="espacamento"></div>
     <section id="sinopse">
         <div class="box-sinopse">
             <h1>Sinopse</h1>
@@ -69,10 +63,13 @@
             <p><span>"</span> Um grande homem não procura liderar. Ele é convocado, e aceita<span>"</span></p>
 
     </section>
-    <section class="origem">
-        <div class="textoOrigem">
-          
+    <section id="sobreDuna">
+        <div class="sobreDuna">
+            <h1>Por Que um site sobre Duna?</h1>
+            <p>Porque alem de uma história que se passa em um futuro distante, com tecnologia alienígena, seres e planetas bizarros, Duna é, para todos os efeitos, uma narrativa de construção de mito ou lenda tendo como pano de fundo um contexto fortemente ambientalista e religioso, desde as óbvias influências médio-orientais, passando pela ascensão e queda de impérios em uma Jornada do Herói que foge ao que se espera da estrutura grega clássica e que também funciona como um profundo e doloroso aviso sobre o preço do fanatismo cego que se segue ao estabelecimento da figura messiânica. </p>
+        </div>
     </section>
+    
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

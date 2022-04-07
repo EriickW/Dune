@@ -1,0 +1,17 @@
+@media screen and (max-width: 700px) {
+    .container-inicio h1{
+        font-size:90px;
+        z-index: 2;
+   }
+    .container{
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .box-sinopse h1 {
+        width: 50%;
+        font-family: duna;
+        font-size: 30px;
+        
+    }
+}
