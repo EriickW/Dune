@@ -97,8 +97,9 @@ cursor: pointer;
     width: 100%;
 }
 #categorias{
+    padding-top: 20px;
     position: relative;
-    font-family: duna;
+    font-family: Fauna;
     text-align: center;
 }
 .container{
@@ -185,7 +186,7 @@ ion-icon{
 
 .box-sinopse h1 {
     width:50%;
-    font-family: duna;
+    font-family: Fauna;
     font-size: 40px;
     display: flex;
     align-items: center;
@@ -200,29 +201,20 @@ ion-icon{
     text-align: center;
 }
 
-@keyframes seta {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
+
 
 .citacao{
-    background: var(--marromEscuro);
+    background: var(--cinza);
     width: 100%;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Fauna;
 }
 .texto{
     color: rgba(39,39,39,255);
-    font-size: 30px;
+    font-size: 25px;
 }
 .origem{
     height: 500px;
@@ -238,24 +230,18 @@ ion-icon{
     flex-direction: column;
     margin-left:10px;
 }
-.textoOrigem h1{
-    font-family: duna;
-    font-size: 30px;
-    margin-bottom: 50px;
-}
-.autor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-}
+
 .autor img{
     width: 100%;
     margin: 0;
 }
 #sobreDuna{
+    position: relative;
     width: 100%;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sobreDuna{
     width: 50%;
@@ -264,12 +250,51 @@ ion-icon{
     justify-content: center;
     flex-direction: column;
     margin-left: 30px;
+    margin-right: 20px;
     
 }
 .sobreDuna h1{
-    font-family: duna;
+    font-family: Fauna;
     margin-bottom: 30px;
 }
 .sobreDuna p{
     font-size: 15px;
+}
+.trailer{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.itensTrailer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.itensTrailer ion-icon{
+    position: relative;
+    overflow: hidden;
+    font-size: 80px;
+    background: transparent;
+    border: none;
+    margin-bottom: 0;
+
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+.itensTrailer h1{
+    font-size: 35px;
+    
+    font-family: Fauna;
+}
+.itensTrailer  ion-icon:hover {
+    color: var(--areia);
+ 
 }
