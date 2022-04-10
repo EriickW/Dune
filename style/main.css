@@ -30,7 +30,42 @@ body {
     font-family: Poppins;
     color:white
 }
+header{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+header nav{
+    height: 50%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+header nav ion-icon{
+    color:white;
+    cursor: pointer;
+}
+header nav button{
+    position: relative;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+}
+header nav button:hover{
+  background-color: white;
+  color: var(--fundoBox);
+}
 .inicio {
     height: 657px;
     width: 100%;

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+@font-face {
+    font-family: Fauna;
+    src: url('../fontes/Fauna.otf');
+}
+@font-face {
+    font-family: duna;
+    src: url('../fontes/Dune_Rise.otf');}
+
+:root {
+    --marromEscuro:rgb(207, 194, 126);
+    --areia:#D98F4E;
+    --laranjaEscuro:#e69769;
+    --cinza:#d8c981;
+    --corEscura:#3D402C;
+    --fundo: rgba(39,39,39,255);
+    --fundoBox: rgb(44, 44, 44);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: var(--fundo);
+    font-family: Poppins;
+    color:white
+}
+header{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+header nav{
+    height: 50%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ion-icon{
+    color:white;
+    cursor: pointer;
+    font-size: 50px
+}
+header nav button{
+    position: relative;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+}
+header nav button:hover{
+  background-color: white;
+  color: var(--fundoBox);
+}
