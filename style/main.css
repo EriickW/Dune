@@ -1,335 +1,448 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
-@font-face {
-    font-family: Fauna;
-    src: url('../fontes/Fauna.otf');
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-@font-face {
-    font-family: duna;
-    src: url('../fontes/Dune_Rise.otf');}
 
 :root {
-    --marromEscuro:rgb(207, 194, 126);
-    --areia:#D98F4E;
-    --laranjaEscuro:#e69769;
-    --cinza:#d8c981;
-    --corEscura:#3D402C;
-    --fundo: rgba(39,39,39,255);
-    --fundoBox: rgb(44, 44, 44);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  --destaque-area-1:rgb(216,201,129);
+  --color-body: rgb(7, 7, 7);
+  --title:rgba(224,175,112,255);
+  --text:#757575;
+  --font-text:'Ubuntu', sans-serif;
+  --font-title:'Times New Roman', Times, serif;
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    background: var(--fundo);
-    font-family: Poppins;
-    color:white
-}
-header{
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-}
-header nav{
-    height: 50%;
-    width: 90%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background: var(--color-body);
+  width: 100%;
+  height: 100vh;
 }
 
-header nav ion-icon{
-    color:white;
-    cursor: pointer;
-}
-header nav button{
-    position: relative;
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-    font-weight: 600;
-    padding: 10px 20px 10px 20px;
-    cursor:pointer;
-    transition: all 0.5s ease-in-out;
-}
-header nav button:hover{
-  background-color: white;
-  color: var(--fundoBox);
-}
-.inicio {
-    height: 657px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.288),
-    rgba(0, 0, 0, 0.384)),url("../img/dunas.jpg") ;
-    background-size: cover;
-    z-index: 1;
-}
-.container-inicio{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.container-inicio h1{
-     font-size:100px;
-     z-index: 2;
-}
-.container-inicio button{
-    
-background: none;
-height: 50px;
-border: none;
-cursor: pointer;
-}
-.dune {
-    color: white;
-    font-family: Fauna;
-    font-size: 30px;
+.alinhamento {
+  width: 100%;
+  max-width: 120rem;
+  margin-inline: auto;
+  padding-inline: 2%;
 }
 
-.box-icone {
-
-    text-align: center;
-    margin: 0;
+.linha {
+  width: 0.2rem;
+  height: 10rem;
+  background: var(--i);
 }
 
-.box-icone .icone {
-    font-size: 60px;
-    color:white;
-    animation: seta 2s ease-out infinite;
+navbar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-::-webkit-scrollbar {
-    background:var(--fundoBox);
-    width: 10px;
-
+navbar .navbar-content {
+  height: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color:var(--laranjaEscuro);
+navbar .navbar-content .logo {
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
 }
 
-.espacamento {
-    height: 70px;
-    width: 100%;
-}
-.espacamentoMenor {
-    height: 50px;
-    width: 100%;
-}
-#categorias{
-    padding-top: 20px;
-    position: relative;
-    font-family: Fauna;
-    text-align: center;
-}
-.container{
-    position: relative;
-    width: 100%;
-    height: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.container .box{
-    position: relative;
-    height: 400px;
-    width: 325px;
-    background: var(--fundoBox);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 10px 13px -7px #0000007c, 0px 32px 50px -30px rgba(0,0,0,0.08);
-    transition: all 0.4s ease-in-out;
-}
-.container .box:hover{
-    box-shadow: 0px 10px 13px -7px #000000bd, 0px 32px 50px -30px rgba(0, 0, 0, 0.37);
-    height: 420px;
-    width: 345px;
-}
-ion-icon{
-    font-size: 50px;
-    margin-bottom: 40px;
-    color:var(--marromEscuro)
-}
-.container .box h1{
-    font-family: Fauna;
-    margin-bottom: 20px;
-    font-size: 21px;
-}
-.container .box p{
-    font-size: 15px;
+navbar .navbar-content ul {
+  font-family: var(--font-text);
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  list-style: none;
 }
 
-.container .box button{
-    margin-top: 30px;
-    padding: 8px 20px 8px 20px;
-    font-weight: 600;
-    font-family: 'Poppins';
-    border:none;
-    background: transparent;
-    color: var(--marromEscuro);
-    border: 2px solid var(--marromEscuro);
-    transition: all 0.4s ease-in-out;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0px 0px 38px 2px rgba(54,54,54,0.56);
-}
-.container .box button:hover{
-    background: var(--marromEscuro);
-    border: 2px solid var(--marromEscuro);
-   color: rgba(39,39,39,255);
+navbar .navbar-content ul a {
+  text-decoration: none;
+  color: white;
 }
 
-.sinopse {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+navbar .navbar-content button {
+  height: 100%;
+  width: 13rem;
+  color: white;
+  background: none;
+  border: none;
+  border: 0.2rem solid rgba(133, 133, 133, 0.205);
+  font-family: var(--font-text);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.box-sinopse {
-    height: 260px;
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
+navbar .navbar-content button:hover {
+  color: black;
+  background: var(--destaque-area-1);
+  border: 0.2rem solid rgba(133, 133, 133, 0.205);
 }
 
-.box-sinopse h1 {
-    width:50%;
-    font-family: Fauna;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+navbar .menu {
+  display: none;
 }
 
-.box-sinopse p {
-    width: 80%;
-    margin-top: 50px;
-    font-size: 18px;
-    text-align: center;
+navbar.scroll {
+  background: rgba(39, 39, 39, 0.623);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(39, 39, 39, 0.28);
 }
 
-
-
-.citacao{
-    background: var(--cinza);
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Fauna;
-}
-.texto{
-    color: rgba(39,39,39,255);
-    font-size: 25px;
-}
-.origem{
-    height: 500px;
-    width: 100%;
-    display: flex;
-   
-}
-.textoOrigem{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left:10px;
+header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.288)), to(rgba(0, 0, 0, 0.384))), url("../img/dunas.jpg") center center/cover fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.384)), url("../img/dunas.jpg") center center/cover fixed;
 }
 
-.autor img{
-    width: 100%;
-    margin: 0;
+header .container-inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-#sobreDuna{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sobreDuna{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 30px;
-    margin-right: 20px;
-    
-}
-.sobreDuna h1{
-    font-family: Fauna;
-    margin-bottom: 30px;
-}
-.sobreDuna p{
-    font-size: 15px;
-}
-.trailer{
-    height: 100%;
-    width: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.itensTrailer{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.itensTrailer ion-icon{
-    position: relative;
-    overflow: hidden;
-    font-size: 80px;
-    background: transparent;
-    border: none;
-    margin-bottom: 0;
 
-    box-sizing: border-box;
-    transition: all 0.5s ease-in-out;
+header .container-inicio h1 {
+  color: white;
+  font-size: 20rem;
+  text-transform: uppercase;
+  font-family: var(--font-title);
 }
-.itensTrailer h1{
-    font-size: 35px;
-    
-    font-family: Fauna;
+
+header .mouse {
+  position: absolute;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 7rem;
+  z-index: 2;
+  bottom: 0;
 }
-.itensTrailer  ion-icon:hover {
-    color: var(--areia);
- 
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
+main p {
+  font-family: var(--font-text);
+  color: var(--text);
+}
+
+main .quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .quote p {
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+main .quote span {
+  background: var(--i);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+main .quote .linha {
+  width: 0.2rem;
+  height: 10rem;
+  background: var(--i);
+}
+
+main #informacoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 70vh;
+  margin-block: 1rem;
+}
+
+main #informacoes .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.5rem;
+  height: 100%;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #informacoes .container h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+main #informacoes .container p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+main #informacoes .container .movie {
+  position: relative;
+  width: 35rem;
+  height: 24rem;
+  border-right: 0.1rem solid white;
+}
+
+main #informacoes .container .movie button {
+  border: none;
+  position: absolute;
+  background: white;
+  bottom: 1rem;
+  width: 100px;
+  height: 4rem;
+  border: none;
+  background: var(--destaque-area-1);
+  font-weight: 600;
+  border-radius: 0.2rem;
+  border: 0.2rem solid var(--destaque-area-1);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main #informacoes .container .movie button:hover {
+  background: transparent;
+  color: var(--destaque-area-1);
+}
+
+main #informacoes .container .sinopse {
+  width: 60rem;
+}
+
+main #informacoes .container hr {
+  margin-block: 1.5rem;
+}
+
+main .topics {
+  width: 100%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .topics .box {
+  position: relative;
+  background: #0c0c0c;
+  width: 300px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 1%;
+  gap: 1rem;
+  border: 0.2rem solid transparent;
+  border-radius: 0.3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .topics .box h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+main .topics .box p {
+  font-size: 1.4rem;
+}
+
+main .topics .box button {
+  width: 100px;
+  height: 3rem;
+  position: absolute;
+  bottom: 2rem;
+  left: calc(50% - 5rem);
+  background: var(--destaque-area-1);
+  border-radius: 0.2rem;
+  border: 0.2rem solid var(--destaque-area-1);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .topics .box button:hover {
+  background: transparent;
+  color: var(--destaque-area-1);
+}
+
+main .topics .box:hover {
+  border: 0.2rem solid var(--destaque-area-1);
+}
+
+main .img-division {
+  width: 100%;
+  height: 400px;
+  background: fixed url("../img/paul.jpg") center center/cover no-repeat;
+}
+
+main #casas {
+  width: 100%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-block: 2rem;
+}
+
+main #casas h2, main #casas h4 {
+  text-align: center;
+}
+
+main #casas h4 {
+  font-size: 2.5rem;
+  color: var(--i);
+}
+
+main #casas h2 {
+  color: white;
+  font-size: 6rem;
+}
+
+main #casas p {
+  width: 50rem;
+  text-align: justify;
+  font-size: 1.6rem;
+}
+
+main #casas .text {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

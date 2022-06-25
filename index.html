@@ -6,88 +6,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/responsive.css">
     <link rel="stylesheet" href="style/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Duna</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            
-            <ion-icon name="menu-outline"></ion-icon>
-
-            <button>Assista já</button>
-        </nav>
-    </header>
-    <main class="inicio">
-        <div class="container-inicio">
-            <h1 class="dune">DUNE</h1>
-            <a href="#categorias">
-                <button class="box-icone">
-                    <ion-icon class="icone" name="arrow-down-outline"></ion-icon>
-                
-                </button>
+    <navbar id="navbar"class= "scroll">
+        <div class="navbar-content alinhamento">
+            <a class="logo" href="#comeco">
+               <p>DUNE</p>
             </a>
-        </div>
-    </main>
-    <div class="espacamento"></div>
-    <h1 id="categorias">Categorias</h1>
-    <div class="container">
-        
-        <div class="box">
-            <ion-icon name="person-outline"></ion-icon>
-            <h1>Personagens</h1>
-            <p>Principais personagems de Duna</p>
-            <a href="paginas/personagens/personagens.html"><button>Clique aqui</button></a>
-        </div>
-        <div class="box">
-            <ion-icon name="book-outline"></ion-icon>
-            <h1>História de Duna</h1>
-            <p>Origem da épica história de Duna</p>
-            <button>Clique aqui</button>
-        </div>
-        <div class="box">
-            <ion-icon name="film-outline"></ion-icon>
-            <h1>Livros e Filmes</h1>
-            <p>Confira todos os livros e filmes</p>
-            <button>Clique aqui</button>
-        </div>
-    </div>
-    <section id="sinopse">
-        <div class="box-sinopse">
-            <h1>Sinopse</h1>
-            <p>Em um futuro distante, planetas são comandados por casas nobres que fazem parte de um império feudal
-                intergalático. Paul Atreides é um jovem homem cuja família toma controle do planeta deserto Arrakis,
-                também conhecido como Duna. A única fonte
-                da especiaria melange, a substância mais importante do cosmos, Arrakis se prova ser um planeta nem um
-                pouco fácil de governar.</p>
-        </div>
-    </section>
-    <div class="espacamentoMenor"></div>
-    <section class="citacao">
-        <div class="texto">
-
-            <p><span>"</span> Um grande homem não procura liderar. Ele é convocado, e aceita<span>"</span></p>
-
-    </section>
-    <div class="espacamentoMenor"></div>
-    <section id="sobreDuna">
-        <div class="sobreDuna">
-            <h1>Por Que assistir Duna?</h1>
-            <p>Porque alem de uma história que se passa em um futuro distante, com tecnologia alienígena, seres e planetas bizarros, Duna é, para todos os efeitos, uma narrativa de construção de mito ou lenda tendo como pano de fundo um contexto fortemente ambientalista e religioso, desde as óbvias influências médio-orientais, passando pela ascensão e queda de impérios em uma Jornada do Herói que foge ao que se espera da estrutura grega clássica e que também funciona como um profundo e doloroso aviso sobre o preço do fanatismo cego que se segue ao estabelecimento da figura messiânica. </p>
-        </div>
-        <div class="trailer">
-
-            <div class="itensTrailer">
-                <a href="https://www.youtube.com/watch?v=dnBpZuSUISQ" ><ion-icon name="caret-forward-circle-outline"></ion-icon></a>
-                <h1>Watch Trailer</h1>
+            <ul>
+                <a href="">
+                    <li>Personagens</li>
+                </a>
+                <a href="">
+                    <li>História</li>
+                </a>
+                <a href="">
+                    <li>Livros</li>
+                </a>
+                <a href="">
+                    <li>Sobre</li>
+                </a>
+                <a href="">
+                    <li>Contatos</li>
+                </a>
+            </ul>
+            <div class="menu">
+                <ion-icon name="menu-outline"></ion-icon>
             </div>
+            <button>Assista já</button>
         </div>
-    </section>
-    
-</body>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </navbar>
+    <header id="comeco"> 
+        <div class="container-inicio ">
+            <h1 class="dune">Dune</h1>
 
+        </div>
+        <img class="mouse"src="icones/mouse.svg" alt="">
+    </header>
+   
+    <main class="">
+        <div class="quote alinhamento">
+            <p>Lutamos por necessidade, independente da disposição.</p>
+            <div class="linha" style="--i:linear-gradient(180deg, transparent, rgba(216,201,129,1) 100%)"></div>
+            <span  style="--i:rgba(216,201,129,1)">1</span>
+        </div>
+
+        <!-- informacoes -->
+        <section id="informacoes" class="alinhamento">
+
+            
+            <div class="container alinhamento">
+                <div class="movie">
+                    <h3>Dune</h3>
+                    <p>Original Release: October 1, 2021</p>
+                    <p>Genres: Action Adventure, Science Fiction</p>
+                    <p>Distributor: Warner Bros. Pictures</p>
+                    <button>Onde asistir</button>
+                </div>
+                <div class="sinopse">
+                    <h3>ABOUT THE FILM</h3>
+                    <p>A mythic and emotionally charged hero’s journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet’s exclusive supply of the most precious resource in existence—a commodity capable of unlocking humanity’s greatest potential—only those who can conquer their fear will survive.</p>
+                    <hr>
+                    <p>Follow DUNE for updates:</p>
+
+                </div>
+                
+            </div>
+        </section>
+        <div class="linha" style="--i:linear-gradient(180deg, transparent, rgba(216,201,129,1) 100%)"></div>
+        <section class=" alinhamento topics">
+                <div class="box">
+                    <h3>Casa de Duna</h3>
+                    <p>Divisão das familias do império</p>
+                    <a href="#casas"><button>Clique Aqui</button></a>
+                </div>
+            <div class="box">
+                <h3>Tecnologia</h2>
+                <p>Tecnoligias apresentadas no filme e suas repectivas explicações</p>
+                <a href="#tecnologias"><button>Clique Aqui</button></a>
+            </div>
+            <div class="box">
+                <h3>Religião</h3>
+                <p>Crenças presentes no filme Duna</p>
+                <a href="#religiao"><button>Clique Aqui</button></a>
+            </div>
+            </section>
+        <div class="linha l4" style="--i:linear-gradient(180deg, rgba(216,201,129,1), transparent )"></div>
+
+
+        <section class="img-division">
+
+        </section>
+
+        <div class="quote alinhamento">
+
+            <div class="linha atreides" style="--i:linear-gradient(180deg, transparent, rgba(31,102,79,255) 100%)" ></div>
+            <span style="--i:rgba(31,102,79,255)">2</span>
+            </div>
+        <!-- Sinopse -->
+        <section id="casas" class="alinhamento">
+            <div class="text-casas alinhamento">
+                <div>
+                    <h2>Casas de Duna</h2>
+                </div>
+                <div class="text">
+                    <p>O Landsraad é o corpo que representa as grandes casas durante os tempos do império. É governada pelo Alto conselho e supervisionado pelo imperador Padixá. No alto conselho questões como tratados, alianças e até mesmo kanly, um processo de vendetta entre as casas é formalizado. No primeiro livro de Duna há uma disputa formalizada em kanly entre a casa Atreides e a casa Harkonnen pelo controle da especiaria melange no planeta Arrakis.</p>
+                    <p>As grandes casas do Landsraad estão no topo da pirâmide social, abaixo apenas do imperador. Esse sistema é chamado de Faufreluches, cuja parte integral era composta pelo imperador, grandes casas, casas menores e os feudos siridares. O sistema têm suas influências no sistema feudal da Europa na idade média. A palavra Landsraad vem da antiga língua escandinava e significa Conselho de Terra.</p>
+                </div>
+            </div>
+        </section>
+       
+        <!-- Citação -->
+        <!-- <section class="citacao">
+            <div class="texto">
+                <p>" Um grande homem não procura liderar. Ele é convocado, e aceita"</p>
+        </section> -->
+        <div class="quote alinhamento">
+
+            <div class="linha atreides" style="--i:linear-gradient(180deg, transparent, rgba(31,102,79,255) 100%)" ></div>
+            <span style="--i:rgba(31,102,79,255)">1</span>
+            </div>
+
+        <section id="sobreDuna">
+            <div class="sobreDuna">
+                <h1>Por Que assistir Duna?</h1>
+                <p>Porque alem de uma história que se passa em um futuro distante, com tecnologia alienígena, seres e planetas bizarros, Duna é, para todos os efeitos, uma narrativa de construção de mito ou lenda tendo como pano de fundo um contexto fortemente ambientalista e religioso, desde as óbvias influências médio-orientais, passando pela ascensão e queda de impérios em uma Jornada do Herói que foge ao que se espera da estrutura grega clássica e que também funciona como um profundo e doloroso aviso sobre o preço do fanatismo cego que se segue ao estabelecimento da figura messiânica. </p>
+            </div>
+            <div class="trailer">
+
+                <div class="itensTrailer">
+                    <a href="https://www.youtube.com/watch?v=dnBpZuSUISQ" ><ion-icon name="caret-forward-circle-outline"></ion-icon></a>
+                    <h1>Watch Trailer</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/8fdfdca5ee.js" crossorigin="anonymous"></script>
+</body>
 </html>

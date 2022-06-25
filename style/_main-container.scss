@@ -1,0 +1,201 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p{
+        font-family: var(--font-text);
+        color:var(--text);
+    }
+    .quote{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p{
+            margin-top:5rem;
+            font-size:1.8rem ;
+            margin-bottom: 2rem;
+            color: white;
+        }
+        span{
+            background: var(--i);
+            height: 4rem;
+            width: 4rem;
+            border-radius:50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            font-weight: 800;
+        }
+        .linha{
+            width: 0.2rem;
+            height: 10rem;
+            background: var(--i);
+        }
+    }
+   
+
+    // ==================== Informaçoes Básicas do filme========================
+    #informacoes{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 70vh;
+        margin-block: 1rem;
+        .container{
+            display:flex;
+            justify-content: center;
+            gap:2.5rem;
+            height: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            h3{
+                font-size: 3rem;
+                text-transform: uppercase;
+                color:white;
+                margin-bottom: 3rem;
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                text-align: justify;
+            }
+            .movie{
+                position: relative;
+                width: 35rem;
+                height: 24rem;
+                border-right: 0.1rem solid white;
+                button{
+                    border: none;
+                    position: absolute;
+                    background: white;
+                    bottom: 1rem;
+                    width: 100px;
+                    height: 4rem;
+                    border:none;
+                    background: var(--destaque-area-1);
+                    font-weight: 600;
+                    border-radius: 0.2rem;
+                    border: 0.2rem solid var(--destaque-area-1);
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                }
+                button:hover{
+                    background: transparent;
+                    color:var(--destaque-area-1);
+                }
+            }
+            .sinopse{
+                width: 60rem;
+
+            }
+            hr{
+                margin-block: 1.5rem;
+            }
+         
+        }
+    }
+//  topics
+    .topics{
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        .box{
+            position: relative;
+            background: rgb(12, 12, 12);
+            width: 300px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 1%;
+            gap: 1rem;
+            border: 0.2rem solid transparent;
+            border-radius: 0.3rem;
+            transition: all 0.3s ease-in-out;
+            h3{
+                color: white;
+                font-size: 2rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+            button{
+                width: 100px;
+                height: 3rem;
+                position: absolute;
+                bottom: 2rem;
+                left: calc(50% - 5rem);
+                background: var(--destaque-area-1);
+                border-radius: 0.2rem;
+                border: 0.2rem solid var(--destaque-area-1);
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+            }
+            
+            button:hover{
+                background: transparent;
+                color:var(--destaque-area-1);
+            }
+
+        }
+        .box:hover{
+            border: 0.2rem solid var(--destaque-area-1);
+        }
+    }
+
+    .img-division{
+        width: 100%;
+        height: 400px;
+        background:fixed url("../img/paul.jpg")center center/cover no-repeat;
+    }
+    // ============== Casas do Filme Duna ===============
+
+    #casas{
+        
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-block: 2rem;
+      
+        h2, h4{
+            text-align: center;
+        }
+        h4{
+            
+            font-size: 2.5rem;
+            color: var(--i);
+        }
+        h2{
+            color: white;
+            font-size: 6rem;
+        }
+        p{
+            width: 50rem;
+            text-align: justify;
+            font-size: 1.6rem;
+        }
+        .text{
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content:center;
+            gap: 2rem;
+        }
+        
+    }
+}
