@@ -62,6 +62,8 @@ navbar .navbar-content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 navbar .navbar-content .logo {
@@ -395,7 +397,7 @@ main .topics .box:hover {
 main .img-division {
   width: 100%;
   height: 400px;
-  background: fixed url("../img/paul.jpg") center center/cover no-repeat;
+  background: url("../img/paul.jpg") center center/cover no-repeat fixed;
 }
 
 main #casas {
@@ -431,6 +433,7 @@ main #casas p {
   width: 50rem;
   text-align: justify;
   font-size: 1.6rem;
+  line-height: 2rem;
 }
 
 main #casas .text {
@@ -444,5 +447,96 @@ main #casas .text {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
+}
+
+main #atreides {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(60%, #070707)), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#070707)), -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(transparent), color-stop(transparent), to(#070707)), url("../img/atreides.webp") center center/cover no-repeat;
+  background: linear-gradient(90deg, transparent, #070707 60%), linear-gradient(180deg, transparent, transparent, #070707 100%), linear-gradient(0deg, transparent, transparent, transparent, #070707 100%), url("../img/atreides.webp") center center/cover no-repeat;
+}
+
+main #atreides p {
+  width: 45rem;
+  color: #a8a8a8;
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-block: 2rem;
+}
+
+main #atreides .content-atreides {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main #atreides .content-atreides h2 {
+  color: white;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+main #atreides .content-atreides img {
+  width: 17rem;
+}
+
+main #harkonnen {
+  margin-top: 4rem;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(60%, #070707)), -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(transparent), color-stop(transparent), to(#070707)), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#070707)), url("../img/harkonem.jpeg") center center/cover no-repeat;
+  background: linear-gradient(-90deg, transparent, #070707 60%), linear-gradient(0deg, transparent, transparent, transparent, #070707 100%), linear-gradient(-180deg, transparent, transparent, #070707 100%), url("../img/harkonem.jpeg") center center/cover no-repeat;
+}
+
+main #harkonnen p {
+  width: 45rem;
+  color: #a8a8a8;
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-block: 2rem;
+}
+
+main #harkonnen .content-harkonnen {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main #harkonnen .content-harkonnen h2 {
+  color: white;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+main #harkonnen .content-harkonnen img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 17rem;
 }
 /*# sourceMappingURL=main.css.map */

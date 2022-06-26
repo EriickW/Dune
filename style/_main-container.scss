@@ -159,7 +159,7 @@ main{
     .img-division{
         width: 100%;
         height: 400px;
-        background:fixed url("../img/paul.jpg")center center/cover no-repeat;
+        background:url("../img/paul.jpg")center center/cover no-repeat fixed ;
     }
     // ============== Casas do Filme Duna ===============
 
@@ -188,6 +188,7 @@ main{
             width: 50rem;
             text-align: justify;
             font-size: 1.6rem;
+            line-height: 2rem;
         }
         .text{
             width: 100%;
@@ -197,5 +198,68 @@ main{
             gap: 2rem;
         }
         
+    }
+    #atreides{
+        width: 100%;
+        height: 100vh;
+        background:  /*Esquerda*/linear-gradient(90deg, transparent, rgba(7,7,7,255) 60%), /*Embaixo*/linear-gradient(180deg, transparent,transparent, rgba(7,7,7,1) 100%),/*emcima*/linear-gradient(0deg, transparent,transparent,transparent, rgba(7,7,7,10) 100%),url("../img/atreides.webp")center center/cover no-repeat;
+        p{
+            width: 45rem;
+            color:#a8a8a8;
+            text-align: justify;
+            font-size: 1.6rem;
+            margin-block:2rem;
+        }
+        .content-atreides{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            h2{
+                color: white;
+                font-size: 6rem;
+                font-weight: 500;
+                
+            }
+            img{
+                width: 17rem;
+            }
+        }
+        
+    }
+    #harkonnen{
+        margin-top: 4rem;
+        width: 100%;
+        height: 100vh;
+        background:  /*Direita*/linear-gradient(-90deg, transparent, rgba(7,7,7,255) 60%),/*Em cima*/ linear-gradient(0deg, transparent,transparent,transparent, rgba(7,7,7,10) 100%),/*Em baixo*/linear-gradient(-180deg, transparent,transparent, rgba(7,7,7,10) 100%),url("../img/harkonem.jpeg")center center/cover no-repeat;
+        p{
+            width: 45rem;
+            color:#a8a8a8;
+            text-align: justify;
+            font-size: 1.6rem;
+            margin-block:2rem;
+        }
+        .content-harkonnen{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            h2{
+                color: white;
+                font-size: 6rem;
+                 font-weight: 500;
+                
+            }
+            img{
+                filter: invert(100%) ;
+                width: 17rem;
+            }
+        }
     }
 }

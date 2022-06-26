@@ -7,12 +7,14 @@ navbar{
     align-items: center;
     height: 50px;
     justify-content: center;
+  
     .navbar-content{
         height: 100%;
         color: white;
         display: flex;
         align-items: center;
         justify-content: space-between;
+          flex-wrap: wrap;
         .logo {
             color:white;
             font-size: 3rem;
