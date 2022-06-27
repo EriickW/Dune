@@ -207,7 +207,7 @@ main .quote {
 }
 
 main .quote p {
-  margin-top: 5rem;
+  margin-top: 2rem;
   font-size: 1.8rem;
   margin-bottom: 2rem;
   color: white;
@@ -457,7 +457,7 @@ main #atreides {
 }
 
 main #atreides p {
-  width: 45rem;
+  max-width: 45rem;
   color: #a8a8a8;
   text-align: justify;
   font-size: 1.6rem;
@@ -502,7 +502,7 @@ main #harkonnen {
 }
 
 main #harkonnen p {
-  width: 45rem;
+  max-width: 45rem;
   color: #a8a8a8;
   text-align: justify;
   font-size: 1.6rem;
@@ -542,8 +542,108 @@ main #harkonnen .content-harkonnen img {
 
 main #arrakis-sec-img {
   width: 100%;
-  height: 500px;
+  height: 40rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.51)), to(rgba(0, 0, 0, 0.51))), url("../img/arrakis2.webp") center center/cover no-repeat fixed;
   background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url("../img/arrakis2.webp") center center/cover no-repeat fixed;
+}
+
+main #arrakis {
+  width: 100%;
+  min-height: 200px;
+  margin-block: 2rem;
+}
+
+main #arrakis .arrakis-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #arrakis .arrakis-container h2 {
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+}
+
+main #arrakis .arrakis-container p {
+  width: 50rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+main #arrakis .arrakis-container .text {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+main #melange {
+  width: 100%;
+  min-height: 200px;
+  margin-block: 2rem;
+}
+
+main #melange .melange-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #melange .melange-container h2 {
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+}
+
+main #melange .melange-container p {
+  width: 50rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+main #melange .melange-container .text {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
