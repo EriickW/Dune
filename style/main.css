@@ -451,7 +451,7 @@ main #casas .text {
 
 main #atreides {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(60%, #070707)), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#070707)), -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(transparent), color-stop(transparent), to(#070707)), url("../img/atreides.webp") center center/cover no-repeat;
   background: linear-gradient(90deg, transparent, #070707 60%), linear-gradient(180deg, transparent, transparent, #070707 100%), linear-gradient(0deg, transparent, transparent, transparent, #070707 100%), url("../img/atreides.webp") center center/cover no-repeat;
 }
@@ -496,7 +496,7 @@ main #atreides .content-atreides img {
 main #harkonnen {
   margin-top: 4rem;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(60%, #070707)), -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(transparent), color-stop(transparent), to(#070707)), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#070707)), url("../img/harkonem.jpeg") center center/cover no-repeat;
   background: linear-gradient(-90deg, transparent, #070707 60%), linear-gradient(0deg, transparent, transparent, transparent, #070707 100%), linear-gradient(-180deg, transparent, transparent, #070707 100%), url("../img/harkonem.jpeg") center center/cover no-repeat;
 }
@@ -538,5 +538,12 @@ main #harkonnen .content-harkonnen img {
   -webkit-filter: invert(100%);
           filter: invert(100%);
   width: 17rem;
+}
+
+main #arrakis-sec-img {
+  width: 100%;
+  height: 500px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.51)), to(rgba(0, 0, 0, 0.51))), url("../img/arrakis2.webp") center center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url("../img/arrakis2.webp") center center/cover no-repeat fixed;
 }
 /*# sourceMappingURL=main.css.map */

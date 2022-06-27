@@ -201,7 +201,7 @@ main{
     }
     #atreides{
         width: 100%;
-        height: 100vh;
+       min-height: 100vh;
         background:  /*Esquerda*/linear-gradient(90deg, transparent, rgba(7,7,7,255) 60%), /*Embaixo*/linear-gradient(180deg, transparent,transparent, rgba(7,7,7,1) 100%),/*emcima*/linear-gradient(0deg, transparent,transparent,transparent, rgba(7,7,7,10) 100%),url("../img/atreides.webp")center center/cover no-repeat;
         p{
             width: 45rem;
@@ -233,7 +233,7 @@ main{
     #harkonnen{
         margin-top: 4rem;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         background:  /*Direita*/linear-gradient(-90deg, transparent, rgba(7,7,7,255) 60%),/*Em cima*/ linear-gradient(0deg, transparent,transparent,transparent, rgba(7,7,7,10) 100%),/*Em baixo*/linear-gradient(-180deg, transparent,transparent, rgba(7,7,7,10) 100%),url("../img/harkonem.jpeg")center center/cover no-repeat;
         p{
             width: 45rem;
@@ -261,5 +261,12 @@ main{
                 width: 17rem;
             }
         }
+    }
+    #arrakis-sec-img{
+        width: 100%;
+        height: 500px;
+        background: linear-gradient(rgba(0, 0, 0, 0.51),
+        rgba(0, 0, 0, 0.51)),url("../img/arrakis2.webp")center center/cover no-repeat fixed ;
+       
     }
 }
