@@ -32,6 +32,10 @@ navbar{
                 color:white;
                 
             }
+            a:hover{
+                color:var(--destaque-area-1);
+            
+            }
         }
         button{
             height: 100%;
