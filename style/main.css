@@ -656,4 +656,72 @@ main #melange .melange-container .text {
           justify-content: center;
   gap: 2rem;
 }
+
+main #fremen-sec-img {
+  width: 100%;
+  height: 50rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.51)), to(rgba(0, 0, 0, 0.51))), url("../img/stilgar.jpg") center center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url("../img/stilgar.jpg") center center/cover no-repeat fixed;
+}
+
+main #fremen {
+  width: 100%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-block: 2rem;
+}
+
+main #fremen h2, main #fremen h4 {
+  text-align: center;
+}
+
+main #fremen h4 {
+  font-size: 2.5rem;
+  color: var(--i);
+}
+
+main #fremen h2 {
+  color: white;
+  font-size: 6rem;
+}
+
+main #fremen p {
+  width: 50rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+main #fremen .content-fremen {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #fremen .content-fremen .text {
+  width: 100%;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=main.css.map */

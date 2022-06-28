@@ -337,5 +337,55 @@ main{
             gap: 2rem;
         }
     }
+   
+   
+}
+#fremen-sec-img{
+    width: 100%;
+    height: 50rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51)),url("../img/stilgar.jpg")center center/cover no-repeat fixed ;
+   
+}
+#fremen{
+    width: 100%;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-block: 2rem;
+      
+        h2, h4{
+            text-align: center;
+        }
+        h4{
+            
+            font-size: 2.5rem;
+            color: var(--i);
+        }
+        h2{
+            color: white;
+            font-size: 6rem;
+        }
+        p{
+            width: 50rem;
+            text-align: justify;
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+        .content-fremen{
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content:center;
+            .text{
+                width: 100%;
+                gap: 2rem;
+                flex-wrap: wrap;
+                display: flex;
+                justify-content:center; 
+            }
+        }
+        
 }
 }
