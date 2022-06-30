@@ -196,6 +196,7 @@ main p {
 }
 
 main .quote {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,7 +402,7 @@ main .topics .box:hover {
 
 main .img-division {
   width: 100%;
-  height: 400px;
+  height: 50rem;
   background: url("../img/paul.jpg") center center/cover no-repeat fixed;
 }
 
@@ -547,7 +548,7 @@ main #harkonnen .content-harkonnen img {
 
 main #arrakis-sec-img {
   width: 100%;
-  height: 40rem;
+  height: 50rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.51)), to(rgba(0, 0, 0, 0.51))), url("../img/arrakis2.webp") center center/cover no-repeat fixed;
   background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url("../img/arrakis2.webp") center center/cover no-repeat fixed;
 }
@@ -665,7 +666,7 @@ main #fremen-sec-img {
   background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url("../img/stilgar.jpg") center center/cover no-repeat fixed;
 }
 
-main #fremen {
+main .fremen {
   width: 100%;
   min-height: 200px;
   display: -webkit-box;
@@ -680,28 +681,28 @@ main #fremen {
   margin-block: 2rem;
 }
 
-main #fremen h2, main #fremen h4 {
+main .fremen h2, main .fremen h4 {
   text-align: center;
 }
 
-main #fremen h4 {
+main .fremen h4 {
   font-size: 2.5rem;
   color: var(--i);
 }
 
-main #fremen h2 {
+main .fremen h2 {
   color: white;
   font-size: 6rem;
 }
 
-main #fremen p {
+main .fremen p {
   width: 50rem;
   text-align: justify;
   font-size: 1.6rem;
   line-height: 2rem;
 }
 
-main #fremen .content-fremen {
+main .fremen .content-fremen {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -713,7 +714,7 @@ main #fremen .content-fremen {
           justify-content: center;
 }
 
-main #fremen .content-fremen .text {
+main .fremen .content-fremen .text {
   width: 100%;
   gap: 2rem;
   -ms-flex-wrap: wrap;
@@ -724,5 +725,105 @@ main #fremen .content-fremen .text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main #shai {
+  width: 100%;
+  height: 50rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.51)), to(rgba(0, 0, 0, 0.51))), url("../img/shai.jpg") center center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)), url("../img/shai.jpg") center center/cover no-repeat fixed;
+}
+
+main .tecnologia {
+  width: 100%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-block: 2rem;
+}
+
+main .tecnologia .tec {
+  width: 100%;
+  color: #1B98E0;
+  text-align: center;
+  font-size: 3rem;
+  font-family: var(--font-title);
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+
+main .tecnologia h2, main .tecnologia h4 {
+  text-align: center;
+}
+
+main .tecnologia h4 {
+  font-size: 2.5rem;
+  color: var(--i);
+}
+
+main .tecnologia h2 {
+  color: white;
+  font-size: 6rem;
+}
+
+main .tecnologia p {
+  width: 50rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+main .tecnologia .content-tecnologia {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .tecnologia .content-tecnologia .text {
+  width: 100%;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main button {
+  margin-top: 3rem;
+  border: none;
+  background: white;
+  bottom: 1rem;
+  width: 100px;
+  height: 4rem;
+  border: none;
+  background: var(--i);
+  font-weight: 600;
+  border-radius: 0.2rem;
+  border: 0.2rem solid var(--i);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main button:hover {
+  background: transparent;
+  color: var(--i);
 }
 /*# sourceMappingURL=main.css.map */
