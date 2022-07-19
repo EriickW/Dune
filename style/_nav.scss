@@ -1,4 +1,4 @@
-navbar{
+nav{
    
     position: fixed;
     z-index: 2;
@@ -59,7 +59,7 @@ navbar{
         display: none;
     }
 }
-navbar.scroll{
+nav.scroll{
     background: rgba(39, 39, 39, 0.623);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.1px);

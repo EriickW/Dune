@@ -35,7 +35,7 @@ body {
   background: var(--i);
 }
 
-navbar {
+nav {
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -51,7 +51,7 @@ navbar {
           justify-content: center;
 }
 
-navbar .navbar-content {
+nav .navbar-content {
   height: 100%;
   color: white;
   display: -webkit-box;
@@ -67,13 +67,13 @@ navbar .navbar-content {
       flex-wrap: wrap;
 }
 
-navbar .navbar-content .logo {
+nav .navbar-content .logo {
   color: white;
   font-size: 3rem;
   text-decoration: none;
 }
 
-navbar .navbar-content ul {
+nav .navbar-content ul {
   font-family: var(--font-text);
   font-size: 1.4rem;
   display: -webkit-box;
@@ -83,16 +83,16 @@ navbar .navbar-content ul {
   list-style: none;
 }
 
-navbar .navbar-content ul a {
+nav .navbar-content ul a {
   text-decoration: none;
   color: white;
 }
 
-navbar .navbar-content ul a:hover {
+nav .navbar-content ul a:hover {
   color: var(--destaque-area-1);
 }
 
-navbar .navbar-content button {
+nav .navbar-content button {
   height: 100%;
   width: 13rem;
   color: white;
@@ -105,17 +105,17 @@ navbar .navbar-content button {
   cursor: pointer;
 }
 
-navbar .navbar-content button:hover {
+nav .navbar-content button:hover {
   color: black;
   background: var(--destaque-area-1);
   border: 0.2rem solid rgba(133, 133, 133, 0.205);
 }
 
-navbar .menu {
+nav .menu {
   display: none;
 }
 
-navbar.scroll {
+nav.scroll {
   background: rgba(39, 39, 39, 0.623);
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
